@@ -79,18 +79,17 @@ document.onmousedown = function (e) {
 };
 
 canvas.onmousedown = function (e) {
-	e.preventDefault();
 	isMouseDown = true;
+	return false;
 };
 canvas.onmouseup = function (e) {
-	e.preventDefault();
 	isMouseDown = false;
+	return false;
 	
 };
 canvas.onmouseout = function (e) {
-	e.preventDefault();
 	isMouseDown = false;
-	
+	return false;
 };
 canvas.onmousemove = function (e) {
 	e.preventDefault();
@@ -119,6 +118,7 @@ canvas.onmousemove = function (e) {
 		lastTimeStamp = curTimeStamp;
 		lastLineWidth = calcLineWidth(distance, time);
 	}
+	return false;
 };
 
 function calcDistance (loc1, loc2) {
