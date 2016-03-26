@@ -7,7 +7,8 @@ var canvasHeight = canvasWidth;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-$('#controller').css('width', canvasWidth);
+
+$('#controller').css('width', canvasWidth + 'px');
 
 //status variables
 //to calculate the intermediate parameters
