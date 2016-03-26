@@ -1,16 +1,18 @@
 var canvas = document.getElementById('canvas'),
 	context = canvas.getContext('2d');
 
-var canvasWidth = 800;
+var canvasWidth = Math.min(800, $(window).width() - 20);
 var canvasHeight = canvasWidth;
 
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
+$('#controller').css('width', canvasWidth);
+
 //status variables
 //to calculate the intermediate parameters
 var isMouseDown = false;
-var strokeColor;
+var strokeColor = 'black';
 var lastLoc = null;
 var lastTimeStamp,
 	curTimeStamp;
