@@ -1,0 +1,83 @@
+#canvas {
+	display: block;
+	margin: 0 auto;
+}
+
+.controller {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.clear {
+	float: right;
+	margin: 15px 0 0 10px;
+	border: 2px solid gray;
+	width: 100px;
+	height: 55px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 7px;
+	cursor: pointer;
+	background-color: white;
+	font-weight: bold;
+	color: gray;
+	font-family: "Microsoft Yahei", "sans-serif";
+	transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+
+	transition: color 1s;
+	-moz-transition: color 1s;
+	-webkit-transition: color 1s;
+	-ms-transition: color 1s;
+}
+
+.clear:hover {
+	background-color: #a1d6ff;
+	color: black;
+	border: 2px solid black;
+}
+
+.color-btn {
+	float: left;
+	margin: 10px 10px 0 0;
+
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.color-btn:hover {
+	border: 5px solid red;
+}
+
+.color-btn-selected {
+	border: 5px solid red;
+}
+
+#yellow-btn {
+	background-color: yellow;
+}
+
+#black-btn {
+	background-color: black;
+}
+
+#green-btn {
+	background-color: green;
+}
+
+#orange-btn {
+	background-color: orange;
+}
+
+#red-btn {
+	background-color: red;
+}
+
+#blue-btn {
+	background-color: blue;
+}
+
