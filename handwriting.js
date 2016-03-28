@@ -73,16 +73,16 @@ function coordinateConversion (x, y) {
 }
 
 //listen to the status of the mouse
-document.onmousedown = function (e) {
+document.ontouchstart = document.onmousedown = function (e) {
 	lastLoc = coordinateConversion(e.clientX, e.clientY);
 	lastTimeStamp = new Date().getTime();
 };
 
-canvas.onmousedown = function (e) {
+canvas.ontouchstart = canvas.onmousedown = function (e) {
 	isMouseDown = true;
 	return false;
 };
-canvas.onmouseup = function (e) {
+canvas.ontouchend = canvas.onmouseup = function (e) {
 	isMouseDown = false;
 	return false;
 	
@@ -91,7 +91,7 @@ canvas.onmouseout = function (e) {
 	isMouseDown = false;
 	return false;
 };
-canvas.onmousemove = function (e) {
+canvas.ontouchmove = canvas.onmousemove = function (e) {
 	e.preventDefault();
 
 	if (isMouseDown) {
